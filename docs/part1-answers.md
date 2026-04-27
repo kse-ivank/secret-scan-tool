@@ -8,4 +8,3 @@ secret_group tells the scanner which regex capture group actually contains the s
 
 **3. How does the keyword pre-filter improve performance?**  
 The keyword pre-filter quickly checks each line for a small set of cheap substring matches at the beginning. If none of keywords appear in the line, the regex for that rule is skipped entirely on that line, which  reduces the number of regex evaluations so it results with faster scanning
-
